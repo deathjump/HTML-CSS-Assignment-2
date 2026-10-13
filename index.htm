@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Workshop Registration</title>
+
+  <!-- Google Fonts Integration (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Developer Workshop Registration</h1>
+
+    <form id="registration-form">
+      
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="fullName" required placeholder="John Doe">
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com">
+      </div>
+
+      <!-- Experience Level -->
+      <div class="form-group">
+        <label for="experience-level">Experience Level</label>
+        <select id="experience-level" name="experienceLevel">
+          <option value="" disabled selected>Select your experience level</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <!-- Workshop Track (Flexbox Layout) -->
+      <div class="form-group">
+        <label>Workshop Track</label>
+        <div class="radio-group">
+          <div class="radio-item">
+            <input type="radio" id="track-frontend" name="track" value="frontend">
+            <label for="track-frontend">Frontend Web</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="track-backend" name="track" value="backend">
+            <label for="track-backend">Backend APIs</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="track-uiux" name="track" value="uiux">
+            <label for="track-uiux">UI/UX Design</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notifications Checkbox -->
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="notifications" name="notifications">
+        <label for="notifications">I agree to receive event updates</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Register Now</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
